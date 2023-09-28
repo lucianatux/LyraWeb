@@ -1,15 +1,22 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from './components/NavBar';
-import {Footer} from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import {Home} from "./components/Home";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: 
+      <Home />,
+    errorElement: <h1>ERROR</h1>,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Footer/>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 

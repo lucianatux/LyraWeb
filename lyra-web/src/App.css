@@ -1,3 +1,8 @@
 .navbar{
   background-color: #333;
+  color: #fff;
+}
+.footer{
+  background-color: #bd1313;
+  color: rgb(18, 14, 14);
 }
